@@ -15,6 +15,8 @@
 \includeonly{%
   intro/introduction,
   lit/literature,
+  ro/rayoptics,
+  ht/heattransfer,
   %expt/experimental,
   rnd/results, 
   dec,abs,pub,ack,nomen
@@ -29,10 +31,11 @@
 %\usepackage{longtable}
 %\usepackage{tabularx}
 %\usepackage{rotating}
+\usepackage{textcomp}
 \usepackage{pdflscape}
-
-
-
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{graphicx, subfigure}
 %%% Macro definitions for Commonly used symbols
 \newcommand{\Rey}{\ensuremath{\mathrm{Re}}}
 \newcommand{\avg}[1]{\ensuremath{\overline{#1}}}
@@ -57,22 +60,22 @@
 %*******************************************************************
 %                         Title Page                            
 %*******************************************************************
-\title{Microgrid Reconfiguration}
-\author{Sushrut D. Thakar}
+\title{Numerical Simulation of Heat Transfer for Solar Thermal Applications}
+\author{Manmohan}
 
 %% Print the date. Today's date comes by default, change it here to 
 %% other date format, if required:
 
 %\date{\today}
-\date{Jul 2016}
+\date{October 2017}
 
 
 %% The type of the report can be set here
 
 %\reporttype{A Seminar Report}
-%\reporttype{A Thesis}
-%\reporttype{A Dissertation}
-\reporttype{Zeroth Stage Report}
+\reporttype{A Thesis}
+% \reporttype{A Dissertation}
+%\reporttype{First Stage Report}
 
 %% Name of the degree
 %\degree{EN 406}
@@ -83,12 +86,12 @@
 \dept{Department of Energy Science and Engineering}
 
 %% Supervisor and cosupervisor/excosupervisor name can be put here
-\supervisor{Prof. Suryanarayana Doolla}
+\supervisor{Prof. Suneet Singh}
 %\cosupervisor{Cosper name}
 %\excosupervisor{External Supervisor}
 
 %% Roll number
-\rollnum{Roll No. 13D170013}
+\rollnum{Roll No. 13D170020}
 
 \maketitle
 
@@ -123,8 +126,8 @@
 %*******************************************************************
 %                          Declaration                           
 %*******************************************************************
-%\include{dec} 
-%\addintoc{Declaration}
+\include{dec} 
+\addintoc{Declaration}
 
 %******************************************************************
 %                          Abstract                             
@@ -135,7 +138,7 @@
 %                         Contents list                         
 %******************************************************************
 %\figurespagefalse
-%\tablespagefalse
+% \tablespagefalse
 \makecontents % Creats toc, lof, and lot
 
 %******************************************************************
@@ -155,8 +158,12 @@
 %****************************************************************** 
 \include{intro/introduction}
 \include{lit/literature}
+\include{ro/rayoptics}
+\include{ht/heattransfer}
 %\include{expt/experimental}
+% \include{rnd/rayoptics}
 \include{rnd/results}
+
 
 %****************************************************************
 %                         Appendices                           
