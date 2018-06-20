@@ -66,13 +66,13 @@ temperature patterns they have observed that below the pipes; radiation and cond
 \label{optz}
 \end{figure}
 
-All the research work until this point have been done by solving Navier-Stokes equation for convection. But convection consists of two heat transfer methods namely conduction and advection. Mohan et.al. \citep{MOHAN201837} have shown that conduction accounts for more than 99\% of heat transfer by convection. To prove this they have shown two studies on trapezoidal cavity receiver. First study shows comparison of heat transfer using convection against heat transfer using conduction only in TCR. Obtained results show remarkable similarity. Second study shows comparison of heat transfer using convection+radiation against heat transfer using conduction+radiation. Again in this study results obtained from both the methods are quite close. Obtained Nusselt number at the hot in both the cases is within 1\% of each other which can be seen in the following table \ref{tab:sarathcomptable}. This study shows that even if we take conduction and radiation as heat transfer method in a TCR, same results can be achieved as with convection and radiation as extent of advection is quite insignificant. This also gives an advantage by reducing complexity of the model as Navier-Stokes equation has no longer to be solved.
+All the research work performed until this point have been done by solving Navier-Stokes equation for convection. Now, convection consists of two elements namely conduction and advection. Mohan et.al.\citep{MOHAN201837} have shown that conduction accounts for more than 99\% of heat transfer by convection. To prove this they have shown two studies on trapezoidal cavity receiver. The First study shows a comparison of heat transfer using convection against heat transfer using conduction only in TCR. Obtained results show remarkable similarity. The second study shows a comparison of heat transfer using convection+radiation against heat transfer using conduction+radiation. Again in this study results obtained from both the methods are quite close. Nusselt number obtained at the hot wall in both the cases is within 1\% of each other which can be seen in the following table \ref{tab:sarathcomptable}. This study shows that even if we take conduction and radiation as heat transfer method in a TCR, same results can be achieved as with convection and radiation as the extent of advection is quite insignificant. This reduces computational cost by reducing the complexity of the overall model as Navier-Stokes equation has no longer to be solved.
 
 \begin{table}[H]
 \centering
 \caption{Heat flux and Nusselt number of hot wall in a trapezoidal cavity}
 \label{tab:sarathcomptable}
-\begin{tabular}{|c|c|c|l|l|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
 \textit{\textbf{At the hot wall}} & \textbf{Convection} & \textbf{Conduction} & \textbf{\begin{tabular}[c]{@{}l@{}}Convection+\\ Radiation\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}conduction+\\ Radiation\end{tabular}} \\ \hline
 Total heat (W)                    & 50.06               & 49.00               & 899.90                        & 892.27                        \\ \hline
